@@ -1,1 +1,0 @@
-("7.8" racket ("7414eeb094dfd952db92ab92985e3a344991eebe" . "6d27c7964e1946e2ac839cee01fec3c9b1a827e9") (collects #"defensive-to-contracts" #"defensive-to-contracts" #"definitions.rkt") (collects #"defensive-to-contracts" #"defensive-to-contracts" #"textedit.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"racket" #"serialize.rkt"))
