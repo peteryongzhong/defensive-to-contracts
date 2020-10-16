@@ -17,7 +17,10 @@
   (define path-str (if (string? path)
                        path
                        (path->string path)))
-  (process-file-with-func-contractinfos (path-addcontract path-str)))
+  (define contract-info-error (path-addcontract path-str))
+  (if (empty? (contract-infos&errors-i contract-info-error))
+      "there is no contractable procedures"
+      (process-file-with-func-contractinfos (path-addcontract path-str))))
 
 (provide contract-infos-on-path path-addcontracts-withGUI
          (struct-out func-contract-info)

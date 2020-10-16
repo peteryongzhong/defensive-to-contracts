@@ -36,6 +36,7 @@
 
 
 (define (process-file-with-func-contractinfos contract-info-error)
+
   ;(editor:set-current-preferred-font-size 12)
   (define contract-infos (contract-infos&errors-i contract-info-error))
   (define path (func-contract-info-path (first contract-infos)))
