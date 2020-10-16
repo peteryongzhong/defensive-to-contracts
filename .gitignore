@@ -1,12 +1,12 @@
-/compiled
+compiled/
 
-/doc
+doc/
 
-/scribblings/compiled
-/scribblings/*.pdf 
-/scribblings/*.html
-/scribblings/*.css
-/scribblings/*.js
+scribblings/compiled
+scribblings/*.pdf 
+scribblings/*.html
+scribblings/*.css
+scribblings/*.js
 
 *.rkt~
 *~
