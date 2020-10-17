@@ -265,9 +265,13 @@
                                     (anyf))
                               (orf (notf (predf 'Y? 'arg0 '#hash()))
                                    (notf (predf 'C? 'arg0 '#hash())))) `arg0)
-        '(and/c (and/c (or/c (not/c Y?)
-                             (or/c (not/c A?) (not/c B?))) any)
-                (or/c (not/c Y?) (not/c C?))))
+        '(and/c
+          (and/c
+           (or/c
+            (not/c Y?)
+            (or/c (not/c A?) (not/c B?)))
+           any/c)
+          (or/c (not/c Y?) (not/c C?))))
 
   (test (fact->contract (orf (notf (predf 'Y? 'arg0 '#hash()))
                              (orf (notf (predf 'A? 'arg0 '#hash()))
